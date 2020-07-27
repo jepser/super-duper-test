@@ -35,14 +35,18 @@ export default class App extends React.Component {
         <h1>Hello CodeSandbox</h1>
         <h2>Start editing to see some magic happen!</h2>
         <form onSubmit={this.handleSubmit}>
-          <label>Valid word</label>
+          <p>
+            <label>Valid word</label>
+          </p>
           <input
             type="text"
             name="inputValue"
             onChange={this.handleChange}
             value={this.state.inputValue}
           />
-          <button disabled={this.state.disabledButton}>Submit</button>
+          <p>
+            <button disabled={this.state.disabledButton}>Submit</button>
+          </p>
         </form>
       </div>
     );
